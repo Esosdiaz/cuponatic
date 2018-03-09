@@ -1,0 +1,100 @@
+*{
+	font-family: 'Lato', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+.container{
+	min-width: 480px;
+	padding: 10px;
+	display: flex;
+	flex-direction: row;
+}
+.tarjeta{
+	max-width: 350px;
+	min-width: 350px;
+	margin: 5px;
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #E1E1E1;
+	border-bottom: 10px solid #E1E1E1;
+}
+.img{
+	width: 100%;
+}
+.titulo{
+	font-size: 17px;
+	padding: 10px;
+	color: #717375;
+}
+.contenido{
+	display: flex;
+  	flex-direction: row;
+  	justify-content: space-between;
+  	padding-left: 20px;
+  	margin-bottom: 10px;
+}
+.grupo1{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+.circulo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 40px;
+	font-size: 13px;
+	background-color: #004B9A;
+	color: #ffffff;
+}
+.precios{
+	padding-left: 5px;
+}
+.precioActual{
+	color:#FF9D5C;
+	font-size: 18px;
+}
+.precioAntiguo{
+	font-size: 12px;
+	color: #717375;
+	text-decoration:line-through;
+}
+.grupo2{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+.vendidos{
+	color: #004B9A;
+	font-size: 13px;
+}
+.precios{
+	display:flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.vendidos{
+	margin-right: 30px;
+}
+
+@media only screen and (min-width: 150px) and (max-width: 480px){
+	.container{
+	max-width: 480px;
+	min-width: 100%;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+}
+	.tarjeta{
+		width:100%;
+}
+	.imgCont{
+		width:100%;
+}
+	.img{
+	width: 100%;
+}
+}
+
