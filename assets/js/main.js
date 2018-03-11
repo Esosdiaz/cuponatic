@@ -1,17 +1,18 @@
 $(function() {
     $.ajax({ 
-		url: 'https://mobile.cuponatic.com/api2/descuentos/menu/salon-de-belleza/?mobile=true&ciudad=2&page=1',
+		url: 'http://www.dev.cuponatic.com/test/descuentos.php?limit=10',
 		type: 'GET',
 		dataType: 'JSON',
 		crossDomain: true,
-		data: {'limit': '3'}
+		data: {'limit': '9'}
 	})
     .done(function(res) {
             console.log('success');
-            //console.log('RES', res);
+            console.log('RES', res);
             res.forEach(function(mostrar) {
                 //console.log('ejalé', mostrar.imagen);
                 	$("#cuponaticContainer").append(`
+                		<div class="tarjetaCont">
                 			<div class="tarjeta">
 												<div class="imgCont">
 													<img class="img" src=${mostrar.imagen}>
@@ -40,6 +41,7 @@ $(function() {
 													</div>
 												</div>
 											</div>
+										</div>
 											`);
             });
         })

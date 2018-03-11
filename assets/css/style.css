@@ -4,15 +4,20 @@
 	margin: 0;
 }
 .container{
-	min-width: 480px;
-	padding: 10px;
+	width: 100%;
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.tarjetaCont{
+	margin: 5px;
+	width: 30%;
 }
 .tarjeta{
-	max-width: 350px;
-	min-width: 350px;
-	margin: 5px;
+	width:100%;
+	/*max-width: 350px;
+	min-width: 350px;*/
 	display: flex;
 	flex-direction: column;
 	border: 1px solid #E1E1E1;
@@ -79,14 +84,16 @@
 	margin-right: 30px;
 }
 
-@media only screen and (min-width: 150px) and (max-width: 480px){
+@media only screen and (min-width: 100px) and (max-width: 480px){
 	.container{
 	max-width: 480px;
 	min-width: 100%;
-	padding: 10px;
 	display: flex;
 	flex-direction: column;
 }
+	.tarjetaCont{
+		width:100%;
+	}
 	.tarjeta{
 		width:100%;
 }
@@ -97,4 +104,8 @@
 	width: 100%;
 }
 }
-
+@media only screen and (min-width: 150px) and (max-width: 150px){
+	.contenido{
+		display: flex;
+    	flex-direction: column;
+	}
